@@ -11,7 +11,7 @@ class KubectlSwitch < Formula
   on_macos do
     on_intel do
       url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.0.0/kubectl-switch_darwin_amd64.tar.gz"
-      sha256 "a8d445c359fadfbb06df4d7806f2dee2afd937ef8cfc825882f64f6d2a93c171"
+      sha256 "2c31ae6c85e1977142f8380228b4459782c370a7a37ad4fbbabf8b00cd383fde"
 
       def install
         bin.install "kubectl-switch"
@@ -19,7 +19,7 @@ class KubectlSwitch < Formula
     end
     on_arm do
       url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.0.0/kubectl-switch_darwin_arm64.tar.gz"
-      sha256 "c3b657d92e54ff3cd654b555a654c2f8ec38c11478b5c546b2ae357814013f59"
+      sha256 "1e8b8019e8f437722c2ec0e9b6b33a24179f5add3e109b1fa9363f6b01985198"
 
       def install
         bin.install "kubectl-switch"
@@ -31,7 +31,7 @@ class KubectlSwitch < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.0.0/kubectl-switch_linux_amd64.tar.gz"
-        sha256 "cb8ae47b6f1f21de568d22578d386817ca3f9140f96e13da21ebd5d53f0cc136"
+        sha256 "f411be168a2726435b976a4d42185ec5b2c298b3f331d5145688d4d8d09a4923"
 
         def install
           bin.install "kubectl-switch"
@@ -41,7 +41,7 @@ class KubectlSwitch < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.0.0/kubectl-switch_linux_arm64.tar.gz"
-        sha256 "5d9d5eb9a6fbb92853fb09c7a52983f379dcbeb9fb88126327892ababd82c37d"
+        sha256 "c1c70c0d6008da57b2ea31d4a7d523979660b5e1ced9cabc3fb70fb8f0e4b19e"
 
         def install
           bin.install "kubectl-switch"
