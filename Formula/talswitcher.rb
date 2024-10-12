@@ -11,7 +11,7 @@ class Talswitcher < Formula
   on_macos do
     on_intel do
       url "https://github.com/mirceanton/talswitcher/releases/download/v1.1.2/talswitcher_darwin_amd64.tar.gz"
-      sha256 "64577b552444c5268a6355a4dae07e138c20a28a417fb7a20e783751b9ef1002"
+      sha256 "fe0d73278ed7dbf94c2b4b3a26c1dc439dcbb16ce2cc9fcd045023eb0ef5445e"
 
       def install
         bin.install "talswitcher"
@@ -19,7 +19,7 @@ class Talswitcher < Formula
     end
     on_arm do
       url "https://github.com/mirceanton/talswitcher/releases/download/v1.1.2/talswitcher_darwin_arm64.tar.gz"
-      sha256 "97b18a38eda11cf8ebfc8f47097820385cecb03d13b0804a64f198b77cbec7a3"
+      sha256 "3d02a2c9803ced00f784bbe3c76fc1eee0a225c979c2e26c74546b549928466a"
 
       def install
         bin.install "talswitcher"
@@ -31,7 +31,7 @@ class Talswitcher < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mirceanton/talswitcher/releases/download/v1.1.2/talswitcher_linux_amd64.tar.gz"
-        sha256 "f7834c8714abc0bb153b71452ad2ae54de430e8da2ae544222274311a0cb3382"
+        sha256 "d880317ddea91d6559df8ef35e9e1bb3763c2cc50bfa971b63fa127bf82ca73d"
 
         def install
           bin.install "talswitcher"
@@ -41,7 +41,7 @@ class Talswitcher < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mirceanton/talswitcher/releases/download/v1.1.2/talswitcher_linux_arm64.tar.gz"
-        sha256 "9cb5aa47365bbc6d928ebda723f1a68f69fed6bc71271f6c533ec2c508a0dfa5"
+        sha256 "4c5c07b8f7ab7f8fd4a61c8c7a08ba46a46df1e5710235139b516f9ac907782b"
 
         def install
           bin.install "talswitcher"
