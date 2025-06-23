@@ -5,21 +5,21 @@
 class KubectlSwitch < Formula
   desc "A simple tool to switch between Kubernetes contexts."
   homepage "https://github.com/mirceanton/kubectl-switch"
-  version "2.2.7"
+  version "2.2.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.7/kubectl-switch_darwin_amd64.tar.gz"
-      sha256 "b01982365b784e24c34a4478407fe353a796e43c26679099ade8fe2a14d21af1"
+      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.8/kubectl-switch_darwin_amd64.tar.gz"
+      sha256 "ba399c36e43a3fa4e32761df778ef23c506fcd4f9873b0942401bfbe4501aa4a"
 
       def install
         bin.install "kubectl-switch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.7/kubectl-switch_darwin_arm64.tar.gz"
-      sha256 "db3e02363027f28936925c6ba147e479e1c01e2ff0e1f136d417d4d638a59a5e"
+      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.8/kubectl-switch_darwin_arm64.tar.gz"
+      sha256 "0791b682b8274832338f5a1037792b75f4d9474bc88fc431a6579f34d00b63e2"
 
       def install
         bin.install "kubectl-switch"
@@ -29,15 +29,15 @@ class KubectlSwitch < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.7/kubectl-switch_linux_amd64.tar.gz"
-      sha256 "f16f102c9550ac2ce52b9ad7172705bc90e6ad9f748bcfa156ac567a7d385014"
+      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.8/kubectl-switch_linux_amd64.tar.gz"
+      sha256 "a4a55bc7d8ca63639ef577b937cb773f3522a73121fc80d6fcf1234fb2018b7b"
       def install
         bin.install "kubectl-switch"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.7/kubectl-switch_linux_arm64.tar.gz"
-      sha256 "e03459d9dad5595e727b747e8b36b34a829f0e927350c70b6002af7899982695"
+      url "https://github.com/mirceanton/kubectl-switch/releases/download/v2.2.8/kubectl-switch_linux_arm64.tar.gz"
+      sha256 "e860d01e54a93bd3744964944949928ae034752c02bb05fa7f119d32158614bc"
       def install
         bin.install "kubectl-switch"
       end
