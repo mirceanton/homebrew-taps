@@ -5,21 +5,21 @@
 class Tesmartctl < Formula
   desc "A CLI for controlling TeSmart KVM switches."
   homepage "https://github.com/mirceanton/tesmartctl"
-  version "1.0.0"
+  version "1.0.1"
   license "GPLv3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.0/tesmartctl_darwin_amd64.tar.gz"
-      sha256 "0a82ed50617dc7c23906aa574a5c932e62fae4ed64425380fe9c3aecfb4c4385"
+      url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.1/tesmartctl_darwin_amd64.tar.gz"
+      sha256 "f25c9297d6b64ec5c33132f156a588b1b12ee2c4da2ec03732a2cf7eec8700a2"
 
       def install
         bin.install "tesmartctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.0/tesmartctl_darwin_arm64.tar.gz"
-      sha256 "89943907f78561c909e48fcba9ce967a8e0f9271310e182be2fcf3fd36745a13"
+      url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.1/tesmartctl_darwin_arm64.tar.gz"
+      sha256 "1904ac3cda8243b29a61796113e4e1ba0a4d5c792cdfe8f4c382b7f16a2ddf8a"
 
       def install
         bin.install "tesmartctl"
@@ -28,24 +28,18 @@ class Tesmartctl < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.0/tesmartctl_linux_amd64.tar.gz"
-        sha256 "f63cbfcd2f71c50c73a220852ccdbdabcbb2b9b3bf923e60bd853e0678400af3"
-
-        def install
-          bin.install "tesmartctl"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.1/tesmartctl_linux_amd64.tar.gz"
+      sha256 "f2fb420a5cd05c23ac317de77bfce6d5410b963ccff078c721468e754bc8f544"
+      def install
+        bin.install "tesmartctl"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.0/tesmartctl_linux_arm64.tar.gz"
-        sha256 "1b04f71dccff162457c81becd8ea30d93e5a077a5da909e34ce4e92f1b4ba30a"
-
-        def install
-          bin.install "tesmartctl"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/mirceanton/tesmartctl/releases/download/v1.0.1/tesmartctl_linux_arm64.tar.gz"
+      sha256 "09e3682f6275c970ae50e38be3ce1dbc6c8e2c58ec03ee37fe0470cf122d578b"
+      def install
+        bin.install "tesmartctl"
       end
     end
   end
