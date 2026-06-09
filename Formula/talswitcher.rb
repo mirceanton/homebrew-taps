@@ -5,21 +5,21 @@
 class Talswitcher < Formula
   desc "A simple tool to help manage multiple talosconfig files."
   homepage "https://github.com/mirceanton/talswitcher"
-  version "2.2.25"
+  version "2.2.26"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.25/talswitcher_darwin_amd64.tar.gz"
-      sha256 "ab519855a5e4b2223deed1ff6302ca0253f960eef88a2de96c7937b29dbca268"
+      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.26/talswitcher_darwin_amd64.tar.gz"
+      sha256 "dc96f003497e5f196b2ac14c57f798cc321b1eb84c186b0d15a28457242bd03d"
 
       define_method(:install) do
         bin.install "talswitcher"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.25/talswitcher_darwin_arm64.tar.gz"
-      sha256 "9ca90a44658e39ee6015f98a6ec608656578783803dbb6d0a311667d3c6766df"
+      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.26/talswitcher_darwin_arm64.tar.gz"
+      sha256 "7001b5c6620d07596494fafd2f98fc1a2fd3eb73481cabb7395d5c585c56c6a4"
 
       define_method(:install) do
         bin.install "talswitcher"
@@ -29,15 +29,15 @@ class Talswitcher < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.25/talswitcher_linux_amd64.tar.gz"
-      sha256 "d1215a4d6e88eb012a6fda205417925ecaa195a999ac1b2cf29a177f59922415"
+      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.26/talswitcher_linux_amd64.tar.gz"
+      sha256 "0c3d52b5c3edabf21e94a77da95794cfa256b69b23a2df4f6aea83dcdf67dab7"
       define_method(:install) do
         bin.install "talswitcher"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.25/talswitcher_linux_arm64.tar.gz"
-      sha256 "a76a261a5ddea31071ded4104d7eca09261b8d7f0096bd7fc3d84c26ce3d798a"
+      url "https://github.com/mirceanton/talswitcher/releases/download/v2.2.26/talswitcher_linux_arm64.tar.gz"
+      sha256 "88a8a7be6e50e051a05069ea568119242e2a207e5be7ea1ceb52e2254a6cf786"
       define_method(:install) do
         bin.install "talswitcher"
       end
