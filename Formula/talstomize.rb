@@ -5,21 +5,21 @@
 class Talstomize < Formula
   desc "Like kustomize, but for Talos!"
   homepage "https://github.com/mirceanton/talstomize"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.0/talstomize_darwin_amd64.tar.gz"
-      sha256 "05b75e01799f35c5089404d4fd5b5d1b9e2188f550349954ceac91023516cbb1"
+      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.1/talstomize_darwin_amd64.tar.gz"
+      sha256 "4d023f47561f00faa69d13c35c656a529c1ceeeaa71076d7200dfd4488d246d0"
 
       define_method(:install) do
         bin.install "talstomize"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.0/talstomize_darwin_arm64.tar.gz"
-      sha256 "d3150bb3d7eabcb676a8e481e490f874cf9c53a6e726299c9095690bbf445c54"
+      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.1/talstomize_darwin_arm64.tar.gz"
+      sha256 "8924b2eb8a8ffb45417a8e685003bbb50fb5373f82029de5fd5d1b9ff8897a23"
 
       define_method(:install) do
         bin.install "talstomize"
@@ -29,15 +29,15 @@ class Talstomize < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.0/talstomize_linux_amd64.tar.gz"
-      sha256 "79ce3e8f202ebb89ff8093541edcef00fecd050e4ab2fe5f2ad1d42e8f2edc02"
+      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.1/talstomize_linux_amd64.tar.gz"
+      sha256 "3ebd89188c7631a61eeff1153c54411826a46ee033cc6c367c32b77634966f01"
       define_method(:install) do
         bin.install "talstomize"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.0/talstomize_linux_arm64.tar.gz"
-      sha256 "efe67c8eeaa0838bddacc7e8f25b539976dee56f768d83cb9bbddedccd6a8988"
+      url "https://github.com/mirceanton/talstomize/releases/download/v1.0.1/talstomize_linux_arm64.tar.gz"
+      sha256 "e9d58f1def24bccba84b154be90836c9a420f7390280a3e0faaf9f6f183d64cb"
       define_method(:install) do
         bin.install "talstomize"
       end
